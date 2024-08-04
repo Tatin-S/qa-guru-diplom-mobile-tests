@@ -54,16 +54,19 @@ tasks.withType(Test) {
     }
 }
 task successfulSearch (type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("Successful search")
     }
 }
 task emptySearch (type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("Empty search")
     }
 }
 task onboarding (type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
         includeTags("Onboarding")
     }
