@@ -53,20 +53,17 @@ tasks.withType(Test) {
         }
     }
 }
-task successfulSearch (type: Test) {
-    systemProperties(System.getProperties())
+task successfulSearch_test (type: Test) {
     useJUnitPlatform {
-        includeTags("Successful search")
+        includeTags("SuccessfulSearch")
     }
 }
-task emptySearch (type: Test) {
-    systemProperties(System.getProperties())
+task emptySearch_test (type: Test) {
     useJUnitPlatform {
-        includeTags("Empty search")
+        includeTags("EmptySearch")
     }
 }
-task onboarding (type: Test) {
-    systemProperties(System.getProperties())
+task onboarding_test (type: Test) {
     useJUnitPlatform {
         includeTags("Onboarding")
     }

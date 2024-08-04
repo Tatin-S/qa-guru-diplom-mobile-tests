@@ -40,7 +40,7 @@ public class WikipediaTests extends TestBase {
                 .visibilityCheckOfDoneButtonOnFourthPage()
                 .clickToGetStarted();
     }
-    @Tag("Successful search")
+    @Tag("SuccessfulSearch")
     @Test
     @DisplayName("Поиск статьи по заданному значению")
     void successfulOpenArticleTest() {
@@ -56,7 +56,7 @@ public class WikipediaTests extends TestBase {
 
     }
 
-    @Tag("Empty search")
+    @Tag("EmptySearch")
     @Test
     @DisplayName("Отображение пустого списка при некорректном вводе значения в поиск")
     void emptySearchTest() {
