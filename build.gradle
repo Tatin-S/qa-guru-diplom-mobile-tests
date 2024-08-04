@@ -53,18 +53,13 @@ tasks.withType(Test) {
         }
     }
 }
-task successfulSearch_test (type: Test) {
+task search_test (type: Test) {
     useJUnitPlatform {
-        includeTags("SuccessfulSearch")
-    }
-}
-task emptySearch_test (type: Test) {
-    useJUnitPlatform {
-        includeTags("EmptySearch")
+        includeTags("search")
     }
 }
 task onboarding_test (type: Test) {
     useJUnitPlatform {
-        includeTags("Onboarding")
+        includeTags("onboarding")
     }
 }

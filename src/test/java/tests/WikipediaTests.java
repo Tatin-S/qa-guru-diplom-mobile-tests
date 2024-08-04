@@ -16,7 +16,7 @@ public class WikipediaTests extends TestBase {
     ArticlePage articlePage = new ArticlePage();
     TestData testData = new TestData();
 
-    @Tag("Onboarding")
+    @Tag("onboarding")
     @DisplayName("Успешный просмотр экранов онбординга")
     @Test
     void onboardingTest() {
@@ -40,7 +40,7 @@ public class WikipediaTests extends TestBase {
                 .visibilityCheckOfDoneButtonOnFourthPage()
                 .clickToGetStarted();
     }
-    @Tag("SuccessfulSearch")
+    @Tag("search")
     @Test
     @DisplayName("Поиск статьи по заданному значению")
     void successfulOpenArticleTest() {
@@ -56,7 +56,7 @@ public class WikipediaTests extends TestBase {
 
     }
 
-    @Tag("EmptySearch")
+    @Tag("search")
     @Test
     @DisplayName("Отображение пустого списка при некорректном вводе значения в поиск")
     void emptySearchTest() {
