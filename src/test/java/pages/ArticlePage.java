@@ -11,7 +11,7 @@ public class ArticlePage {
     private final ElementsCollection
             contentArticle = $$(className("android.view.View"));
 
-    @Step
+    @Step("Поиск заданного значения на странице")
     public ArticlePage findText(String value) {
         contentArticle.findBy(text(value));
         return this;
