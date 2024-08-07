@@ -1,6 +1,10 @@
 package tests;
 
 import data.TestData;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,8 +20,11 @@ public class WikipediaTests extends TestBase {
     ArticlePage articlePage = new ArticlePage();
     TestData testData = new TestData();
 
+    @Feature("Тестирование стартовых страниц после запуска приложения с проверкой данных")
+    @Story("Проверка четырех страниц, содержащих текст для ознакомления с приложением")
     @Tag("onboarding")
     @DisplayName("Успешный просмотр экранов онбординга")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void onboardingTest() {
         firstPage
@@ -40,9 +47,13 @@ public class WikipediaTests extends TestBase {
                 .visibilityCheckOfDoneButtonOnFourthPage()
                 .clickToGetStarted();
     }
+
+    @Feature("Проверка поиска Википедии с выпадающим списком ")
+    @Story("Тестирование выпадающего списка поиска с проверкой найденного значения")
     @Tag("search")
     @Test
     @DisplayName("Поиск статьи по заданному значению")
+    @Severity(SeverityLevel.BLOCKER)
     void successfulOpenArticleTest() {
         firstPage
                 .clickSkipButtonOnFirstPage();
@@ -56,9 +67,11 @@ public class WikipediaTests extends TestBase {
 
     }
 
+    @Story("Тестирование выпадающего списка поиска с проверкой пустого списка")
     @Tag("search")
     @Test
     @DisplayName("Отображение пустого списка при некорректном вводе значения в поиск")
+    @Severity(SeverityLevel.NORMAL)
     void emptySearchTest() {
         firstPage
                 .clickSkipButtonOnFirstPage();
