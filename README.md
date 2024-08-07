@@ -56,7 +56,7 @@
 
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/">**Сборка в Jenkins**</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/"><img src="images/JenkinsJobMobile.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/"><img src="images/JenkinsJobMobile.png>" alt="Jenkins"/></a>  
 </p>
 
 <h1 align="left">
