@@ -118,7 +118,7 @@ gradle test -DdeviceHost=browserstack
 ## *Тест кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="images/TestOpsTests.png">  
+<img title="Allure TestOps Tests" src="images/TestOpsTests.jpg">  
 </p>
 
 
@@ -131,7 +131,7 @@ gradle test -DdeviceHost=browserstack
 
 
 <p align="center">  
-<img title="Jira" src="images/JiraTicket.png">  
+<img title="Jira" src="images/JiraTicket.jpg">  
 </p>
 
 <h1 align="left">
@@ -139,7 +139,7 @@ gradle test -DdeviceHost=browserstack
 </h1>
 
 <p align="center">  
-<img title="Telegram notification" src="images/Telegram_bot.png">  
+<img title="Telegram notification" src="images/Telegram_bot.jpg">  
 </p>
 
 <h1 align="left">
