@@ -56,7 +56,7 @@
 
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/">**Сборка в Jenkins**</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/"><img src="images/JenkinsJobMobile.png>" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/"><img src="images/JenkinsJobMobile.jpg" alt="Jenkins"/></a>  
 </p>
 
 <h1 align="left">
@@ -87,19 +87,19 @@ gradle test -DdeviceHost=browserstack
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/Allure_Report_Overview.png">  
+<img title="Allure Overview Dashboard" src="images/Allure_Report_Overview.jpg">  
 </p>  
 
 ### *Тест кейсы*
 
 <p align="center">  
-<img title="Allure Tests" src="images/Test_cases.png">  
+<img title="Allure Tests" src="images/Test_cases.jpg">  
 </p>
 
 ### *Графики*
 
  <p align="center">  
-<img title="Allure Graphics" src="images/Allure_Charts.png">  
+<img title="Allure Graphics" src="images/Allure_Charts.jpg">  
 </p>
 
 
@@ -112,7 +112,7 @@ gradle test -DdeviceHost=browserstack
 
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="images/Allure_Test_Ops_Dashboard.png">  
+<img title="Allure TestOps Dashboard" src="images/Allure_Test_Ops_Dashboard.jpg">  
 </p>  
 
 ## *Тест кейсы*
