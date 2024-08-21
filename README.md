@@ -1,5 +1,5 @@
-
-<h2 align="center">Проект по мобильной автоматизации для приложения Wikipedia <a target="_blank" href="https://www.wikipedia.org/"></a> </h2>
+<h2 align="center">Проект по мобильной автоматизации для приложения
+Wikipedia <a target="_blank" href="https://www.wikipedia.org/"></a> </h2>
 
 <p align="center">
 <img title="Wikipedia" src="images/WikipediaLogo.png">
@@ -8,6 +8,7 @@
 <a name="наверх"></a>
 
 # :green_book: *Содержание*
+
 + [Технологии и инструменты](#Technology)
 + [Особенности проекта](#особенности-проекта)
 + [Примеры автоматизированных тест кейсов](#TestCases)
@@ -41,6 +42,7 @@
 </p>
 
 ## Особенности проекта
+
 - Проект состоит из мобильных тестов на Android
 - В данном проекте автотесты написаны на языке `Java`
 - В качестве сборщика был использован - `Gradle`
@@ -68,8 +70,6 @@
 - :white_check_mark: Проверка функции поиска по тексту
 - :white_check_mark: Проверка функции отображения пустого списка результатов поиска при некорректном вводе значения
 
-
-
 <h1 align="left">
 <img src="images/Jenkins.svg" width="25" height="25" alt="Jenkins"/>  <a name="Jenkins"><i>Запуск тестов в Jenkins</i></a>
 </h1>
@@ -85,7 +85,8 @@
 
 
 ***Локальный запуск:***
-> Для работы со своей учетной записью на https://www.browserstack.com/ следует отредактировать файл - authData.properties
+> Для работы со своей учетной записью на https://www.browserstack.com/ следует отредактировать файл -
+> authData.properties
 > Если требуется изменить устройство следует отредактировать файл - browserstack.properties
 > Для работы со своим мобильным устройством - заменить параметры в файле real.properties  
 > Для работы с отличным от проектного эмулятором стоит изменить параметры в файле - emulation.properties
@@ -95,10 +96,10 @@ gradle test -DdeviceHost=emulation
 ```
 
 ***Удаленный запуск (через browserstack):***
+
 ```bash  
 gradle test -DdeviceHost=browserstack
 ```
-
 
 <h1 align="left">
 <img src="images/Allure_Report.svg" width="25" height="25" alt="Allure_Report"/>  <a name="AllureReport"><i>Отчет о результатах тестирования в Allure</i></a>
@@ -106,8 +107,6 @@ gradle test -DdeviceHost=browserstack
 
 <a target="_blank" href="https://jenkins.autotests.cloud/job/qa-guru-diplom-mobile-tests/allure/">**Отчёт в Allure**</a>
 <p align="center">  
-
-
 
 ### *Основная страница отчёта*
 
