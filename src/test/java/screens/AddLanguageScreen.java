@@ -14,7 +14,7 @@ public class AddLanguageScreen {
     SelenideElement
             addOrEditLanguagesButton = $(AppiumBy.id("org.wikipedia.alpha:id/addLanguageButton")),
             addLanguageButton = $$(AppiumBy.id("org.wikipedia.alpha:id/wiki_language_title")).last(),
-            addRussian = $$(AppiumBy.id("org.wikipedia.alpha:id/localized_language_name")).findBy(text("Russian")),
+            addRussian = $$(AppiumBy.id("org.wikipedia.alpha:id/localized_language_name")).findBy(text("Русский")),
             backButton = $(AppiumBy.className("android.widget.ImageButton")),
             languagesList = $(AppiumBy.id("org.wikipedia.alpha:id/languagesList"));
 
