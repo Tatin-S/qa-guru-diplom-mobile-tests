@@ -42,7 +42,7 @@ public class AddLanguageScreen {
         backButton.click();
         return this;
     }
-    @Step("Проверем, что русский язык добавлен в список языков Wikipedia")
+    @Step("Проверяем, что русский язык добавлен в список языков Wikipedia")
     public AddLanguageScreen checkListOfAddedLanguages(String firstLanguageCode, String secondLanguageCode) {
         languageCodeList.shouldHave(texts(firstLanguageCode, secondLanguageCode));
         return this;
