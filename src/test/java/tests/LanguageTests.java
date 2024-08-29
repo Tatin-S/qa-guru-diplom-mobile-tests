@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.AddLanguageScreen;
 
-public class LanguageTests {
+public class LanguageTests extends TestBase{
     AddLanguageScreen addLanguageScreen = new AddLanguageScreen();
     @Feature("Тестирование добавления языка с проверкой данных")
     @Story("Проверка добавления нескольких языков")
