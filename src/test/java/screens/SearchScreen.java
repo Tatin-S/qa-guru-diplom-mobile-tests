@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 
-public class SearchPage {
+public class SearchScreen {
     private static final SelenideElement
             searchBar = $(accessibilityId("Search Wikipedia")),
             searchText = $(id("org.wikipedia.alpha:id/search_src_text"));
@@ -22,26 +22,26 @@ public class SearchPage {
 
 
     @Step("Проверяем отображение строки поиска")
-    public SearchPage checkAccessibilityOfSearchBar() {
+    public SearchScreen checkAccessibilityOfSearchBar() {
         searchBar.shouldBe(visible);
         return this;
     }
 
     @Step("Вводим значение в строку поиска")
-    public SearchPage enterValueIntoSearch(String value) {
+    public SearchScreen enterValueIntoSearch(String value) {
         searchBar.click();
         searchText.sendKeys(value);
         return this;
     }
 
     @Step("Проверяем отображение статей в результате поиска")
-    public SearchPage checkListTitles() {
+    public SearchScreen checkListTitles() {
         listTitles.shouldHave(sizeGreaterThan(0));
         return this;
     }
 
     @Step("Открываем первую статью в выпадающем списке")
-    public SearchPage clickFirstArticleInResultList() {
+    public SearchScreen clickFirstArticleInResultList() {
         resultList.first().click();
         return this;
     }

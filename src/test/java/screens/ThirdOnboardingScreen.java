@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.AppiumBy;
@@ -9,14 +9,14 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static org.openqa.selenium.By.id;
 
-public class ThirdPage {
+public class ThirdOnboardingScreen {
     private static final SelenideElement
             continueButtonOnThirdPage = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")),
             primaryText = $(id("org.wikipedia.alpha:id/primaryTextView")),
             skipButton = $(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button"));
 
     @Step("Проверка отображения текста Reading lists with sync на третьей странице")
-    public ThirdPage checkPrimaryTextOnThirdPage() {
+    public ThirdOnboardingScreen checkPrimaryTextOnThirdPage() {
         primaryText.shouldHave(text("Reading lists with sync"));
         return this;
     }
@@ -27,7 +27,7 @@ public class ThirdPage {
     }
 
     @Step("Проверка отображения кнопки Skip на третьей странице")
-    public ThirdPage checkSkipButtonOnThirdPage() {
+    public ThirdOnboardingScreen checkSkipButtonOnThirdPage() {
         skipButton.shouldBe(visible);
         skipButton.shouldHave(text("Skip"));
         return this;
