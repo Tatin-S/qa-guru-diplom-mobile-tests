@@ -19,7 +19,7 @@ public class AddLanguageScreen {
             languagesList = $(AppiumBy.id("org.wikipedia.alpha:id/languagesList"));
 
     ElementsCollection
-            languageCodeList = $$(AppiumBy.id("org.wikipedia.alpha:id/wiki_language_code"));
+            languageCodeList = $$(AppiumBy.id("org.wikipedia.alpha:id/langCodeText"));
 
 
     @Step("Нажимаем на кнопку Add or edit languages")
