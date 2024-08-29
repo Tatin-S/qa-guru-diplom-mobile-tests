@@ -63,3 +63,8 @@ task onboarding_test (type: Test) {
         includeTags("onboarding")
     }
 }
+task language_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("language")
+    }
+}
