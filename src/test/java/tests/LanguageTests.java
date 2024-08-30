@@ -1,16 +1,15 @@
 package tests;
 
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.AddLanguageScreen;
 
-public class LanguageTests extends TestBase{
+@Owner("Stulova Tatiana")
+public class LanguageTests extends TestBase {
     AddLanguageScreen addLanguageScreen = new AddLanguageScreen();
+
     @Feature("Тестирование добавления языка с проверкой данных")
     @Story("Проверка добавления нескольких языков")
     @Tag("language")
@@ -22,7 +21,7 @@ public class LanguageTests extends TestBase{
                 .clickAddOrEditLanguages()
                 .clickAddLanguage()
                 .addLanguage()
-                .checkListOfAddedLanguages("EN","RU")
+                .checkListOfAddedLanguages("EN", "RU")
                 .clickBackButton()
                 .checkSizeOfLanguagesList(2);
     }
