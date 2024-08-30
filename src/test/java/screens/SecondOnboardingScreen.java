@@ -21,9 +21,8 @@ public class SecondOnboardingScreen {
     }
 
     @Step("Нажатие на кнопку Continue на второй странице")
-    public SecondOnboardingScreen clickOnForwardButtonOnSecondPage() {
+    public void clickOnForwardButtonOnSecondPage() {
         forwardButtonOnSecondPage.click();
-        return this;
     }
 
     @Step("Проверка отображения кнопки Skip на второй странице")

@@ -21,9 +21,8 @@ public class FirstOnboardingScreen {
     }
 
     @Step("Нажатие на кнопку Continue на первой странице")
-    public FirstOnboardingScreen clickOnForwardButtonOnFirstPage() {
+    public void clickOnForwardButtonOnFirstPage() {
         forwardButtonOnFirstPage.click();
-        return this;
     }
 
     @Step("Проверяем отображение кнопки Skip на первой странице")
@@ -34,8 +33,7 @@ public class FirstOnboardingScreen {
     }
 
     @Step("Нажимаем на кнопку Skip на первой странице")
-    public FirstOnboardingScreen clickSkipButtonOnFirstPage() {
+    public void clickSkipButtonOnFirstPage() {
         skipButton.click();
-        return this;
     }
 }
