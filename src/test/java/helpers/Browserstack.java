@@ -15,8 +15,7 @@ public class Browserstack {
                 .auth().basic(authConfig.username(), authConfig.password())
                 .get(url)
                 .then()
-                .log().status()
-                .log().body()
+                .log().all()
                 .statusCode(200)
                 .extract().path("automation_session.video_url");
     }
