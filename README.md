@@ -84,6 +84,17 @@
 <a name="SystemProperty"><i>Команды для запуска из терминала</i></a>
 </h1>
 
+### Допустимые комбинации
+
+```mermaid 
+flowchart LR
+    A(gradle) --> B(clean)
+    B --> C{Выбрать тег}
+    C --> D[test]
+    C --> E[search]
+    C --> F[onboarding]
+    C --> G[language]
+```
 
 ***Локальный запуск:***
 > Для работы со своей учетной записью на https://www.browserstack.com/ следует отредактировать файл - authData.properties
@@ -91,8 +102,14 @@
 > Для работы со своим мобильным устройством - заменить параметры в файле real.properties  
 > Для работы с отличным от проектного эмулятором стоит изменить параметры в файле - emulation.properties
 
+***Запуск на эмуляторе:***
 ```bash  
 gradle test -DdeviceHost=emulation
+```
+
+***Запуск на устройстве:***
+```bash  
+gradle test -DdeviceHost=real
 ```
 
 ***Удаленный запуск (через browserstack):***
